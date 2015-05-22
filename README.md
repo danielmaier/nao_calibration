@@ -18,19 +18,19 @@ The approach is described in details in the paper:
 
 The software requires the following software:
 
-ROS
-hrl_kinematics (https://github.com/ahornung/hrl_kinematics.git)
-libflann
-PCL
-opencv
-g2o (only commit 96c5a7 tested)
-libgsl
-nao_robot
-opencv
-aruco (e.g. from ar_sys in ros-indigo)
+* ROS
+* hrl_kinematics (https://github.com/ahornung/hrl_kinematics.git)
+* libflann
+* PCL
+* opencv
+* g2o (only commit 96c5a7 tested)
+* libgsl
+* nao_robot
+* opencv
+* aruco (e.g. from ar_sys in ros-indigo)
 
-catkin
-doxygen
+* catkin
+* doxygen
 
 
 ## Compilation
@@ -45,9 +45,13 @@ The documention can be created with doxygen.
 
 ### Preparation
 First of all, the framework requires that the initial marker placement is approximately known from the ROS param server. So the urdf model needs to be adjusted accordingly. The same goes for the camera calibration. 
-The nao_description package (https://github.com/danielmaier/nao_description) simplifies this process as it is parameterized for this purpose and only the calibration_xxx.xacro files in the urdf directoy need to be updated. Note, this version is not the "official" nao_description package. It should be possible to merge the changes at one point. 
+The nao_description package (https://github.com/danielmaier/nao_description) simplifies this process as it is parameterized for this purpose and only the calibration_xxx.xacro files in the urdf directoy need to be updated. Note, this version is not the "official" nao_description package. It should be possible to merge the changes at one point. In general, the code has only been tested with the this nao_description package and not the official one which has different link and joint names. 
+
 
 Second, a list of possible poses is required. The poses should be such that the marker is visible in the image. Such a list can be created manually (cumbersome) or using an initial calibration and the poseSampling node. It might be necessary to make some modifications in order to run that node. An auto-generated sample list is contained in the config folder (e.g. poses_larm_750.yaml) for the marker placement as illustrated in the paper. So if your markers are approximately at the same position, it should work out of the box. 
+
+Third, there are some implicit assumptions made, e.g. that you are trying to calibrate the lower of Nao's two cameras and its TF frame name is CameraBottom_frame. This assumption has been lifted in some parts of the code and the camera frame is now configurable but maybe other parts of the code still rely on this assumption. The same goes for other link and joint names. 
+
 
 ### Configuration:
 The main config file is nao_calibration.yaml.
