@@ -75,9 +75,11 @@ Also, these topics need to be published:
 
 
 ### Running the actual calibration:
-`rosrun kinematic_calibration upateNode`
-`roslaunch kinematic_calibration dataCaptureService.launch`
-`roslaunch kinematic_calibration calibrate_nao.launch`
+```
+rosrun kinematic_calibration upateNode
+roslaunch kinematic_calibration dataCaptureService.launch
+roslaunch kinematic_calibration calibrate_nao.launch
+```
 
 calibrate_nao calibrates both arms of the robot. Start with that. To include the legs, adjust the launch file accordingly, as well as the config file (nao_calibration.yaml)
 
