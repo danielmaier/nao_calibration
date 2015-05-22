@@ -11,7 +11,7 @@ Please note: This code is experimental and not a stable version. Parts of the fu
 
 ## Background
 The approach is described in details in the paper:
-Daniel Maier, Stefan Wrobel, Maren Bennewitz, Whole-Body Self-Calibration via Graph-Optimization and Automatic Configuration Selection, IEEE International Conference on Robotics and Automation (ICRA), 2015, http://www2.informatik.uni-freiburg.de/~maierd/pub/maier15icra.pdf
+[Daniel Maier, Stefan Wrobel, Maren Bennewitz, Whole-Body Self-Calibration via Graph-Optimization and Automatic Configuration Selection, IEEE International Conference on Robotics and Automation (ICRA), 2015]( http://www2.informatik.uni-freiburg.de/~maierd/pub/maier15icra.pdf)
 
 
 ## Requirements
