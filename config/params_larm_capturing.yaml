@@ -1,0 +1,13 @@
+start_pose_num: 1 #can likely be removed
+end_pose_num: 15  # "
+headYaw_min: -0.6
+headYaw_max: 0.2
+headYaw_step: 0.4
+headPitch_min: -0.5
+haedPitch_max: 0.2
+headPitch_step: 0.33
+marker_color_r: 255 # what is this?
+marker_color_g: 0
+marker_color_b: 0
+find_marker: true
+move_marker_to_corners: false

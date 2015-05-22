@@ -1,0 +1,5 @@
+string poseName
+string chainName
+string[] jointNames
+---
+measurementData measurement

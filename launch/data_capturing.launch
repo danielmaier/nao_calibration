@@ -1,0 +1,29 @@
+<launch>
+  <arg name="chain_name" />
+  <arg name="robot_ip" default="ra.local" />
+  <arg name="manual" default="false" />
+  <rosparam file="$(find kinematic_calibration)/config/params_general.yaml" command="load"/>
+  <rosparam file="$(find kinematic_calibration)/config/params_$(arg chain_name)_general.yaml" command="load"/>
+  <!-- compute a difference image (not used?) -->
+  <!--
+  <node pkg="kinematic_calibration" type="imagePreprocessingNode" name="ImagePreprocessing">
+  	<rosparam param="in_topic">"/nao_camera/image_raw"</rosparam>
+  	<rosparam param="out_topic">"/nao_camera/image_processed"</rosparam>
+  </node>  
+-->
+  <!-- automatic data capture from list of poses (see params_$(chain_name)_capturing.yaml) -->
+  <node pkg="kinematic_calibration" type="dataCaptureMain" name="DataCapture" output="screen" >
+    <rosparam file="$(find kinematic_calibration)/config/params_$(arg chain_name)_capturing.yaml" command="load" ns="params" />
+  	<rosparam param="image_topic" ns="params">"/nao_camera/image_raw"</rosparam>
+  	<rosparam param="hotjoint_topic" ns="params">"/nao_temperature/hot_joint_found"</rosparam>
+  	<param name="manual_data_capturing" value="$(arg manual)" type="bool"/>
+  </node>
+  <!-- watch joint temperatures -->
+  <node pkg="kinematic_calibration" type="temperatureNode" name="TemperatureNode" args="--pip $(arg robot_ip)">
+  	<rosparam param="hotjoint_topic" ns="params">"/nao_temperature/hot_joint_found"</rosparam>
+  </node>
+  <!-- pose manager to execute poses by name -->
+  <node pkg="nao_remote" type="pose_manager.py" name="pose_manager">
+    <rosparam file="$(find kinematic_calibration)/config/poses_$(arg chain_name).yaml" command="load" ns="poses" />
+  </node>  
+</launch>

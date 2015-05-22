@@ -1,0 +1,8 @@
+<launch>
+  <rosparam file="$(find kinematic_calibration)/config/params_general.yaml" command="load"/>
+  <rosparam param="optimization_ids" file="/media/Daten/Studium/Uni Freiburg Master Informatik/WS201314/Masterthesis/Ergebnisse/2014-05-16 Validierung Messungen/optimale posen/all.yaml"/>
+  <param name="folder_name" value="test"/>
+  <param name="validation_data_strategy" value="others"/>
+  <node pkg="kinematic_calibration" type="validationNode" name="validationNode" output="screen">	
+  </node>
+</launch>

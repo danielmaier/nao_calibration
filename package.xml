@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package>
+  <name>kinematic_calibration</name>
+  <version>0.5.0</version>
+  <description>The kinematic_calibration package is a framework for humanoid robot calibration</description>
+
+  <maintainer email="maierd@cs.uni-freiburg.de">Daniel Maier</maintainer>
+
+  <license>GPLv3</license>
+
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>image_transport</build_depend>	
+  <build_depend>OpenCV</build_depend>
+  <build_depend>orocos_kdl</build_depend>	
+  <build_depend>urdf</build_depend>	
+  <build_depend>kdl_parser</build_depend>	
+  <build_depend>nao_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>image_geometry</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>moveit_core</build_depend>
+  <build_depend>moveit_ros_planning</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>hrl_kinematics</build_depend>
+  <build_depend>ar_sys</build_depend>
+  
+  
+  <run_depend>ar_sys</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>tf_conversions</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>image_transport</run_depend>	
+  <run_depend>cvBlob</run_depend>	
+  <run_depend>orocos_kdl</run_depend>	
+  <run_depend>kdl_parser</run_depend>	
+  <run_depend>urdf</run_depend>
+  <run_depend>nao_msgs</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>image_geometry</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>moveit_core</run_depend>
+  <run_depend>moveit_ros_planning</run_depend>
+  <run_depend>hrl_kinematics</run_depend>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <export>
+  </export>
+</package>

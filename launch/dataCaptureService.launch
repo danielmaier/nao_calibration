@@ -1,0 +1,11 @@
+<launch>
+
+<node name="dataCaptureService" pkg="kinematic_calibration" type="dataCaptureService" output="screen" respawn="True">
+   <param name="find_marker" type="bool" value="True" />
+   <param name="move_marker_to_corners" type="bool" value="False" />
+   <remap from="/nao_camera/image_raw" to="/camera/image_raw" />
+   <remap from="/nao_camera/camera_info" to="/camera/camera_info" />
+ </node>
+
+ </launch>
+

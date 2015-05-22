@@ -1,0 +1,64 @@
+<launch>
+  <arg name="chain_name" />
+  <arg name="num_of_splits" />
+  <param name="/robot_description_semantic" textfile="$(find kinematic_calibration)/config/nao.srdf" type="str"/>
+  <rosparam ns="$(arg chain_name)" file="$(find kinematic_calibration)/config/params_$(arg chain_name)_general.yaml" command="load"/>
+  <node pkg="kinematic_calibration" type="validationPoseSelectionNode" name="poseSelectionNode4" output="screen">
+    <rosparam>
+      ### Select the pose source: 
+      # - "sampling": Sample poses according to the specified parameters (see below).
+      # - "measurement": Generate the pose pool from measurements.
+      pose_source: "measurement"
+      
+      ### "sampling" parameters: 
+      # number of poses which should be generated
+      pose_pool_size: 200
+      # name of the camera link / frame
+      camera_frame: "CameraBottom_frame"
+      # name of the torso link / frame
+      torso_frame: "torso"
+      # radius of the camera 'view cylinder'
+      view_cylinder_radius: 0.02 
+   
+      # range within which the predicted marker should be:
+      xMin: 150
+      xMax: 490
+      yMin: 150
+      yMax: 330
+      
+      # specifies the minimum distance from the joint limits  
+      joint_limits_distance: 0.2
+      
+      # specifies the width of the joint limits range within which the probability 
+      # distribution is linear increasing / decreasing (the distribution is uniform in the middle)
+      joint_limits_linear_width: 0.2
+      
+      # should the stability be tested? requires an initial pose!
+      test_pose_stability: false
+      
+      # should the poses sampled s.t. the end effector is fixed?
+      # requires an initial pose - its transformation from torso to tip will be kept.
+      # this option is useful for generating poses for the feets (in combination with test_pose_stability)
+      #keep_end_effector_pose: false
+      
+      # name of the initial pose (optional; needed for testing the pose stability)
+      initial_pose_name: "standing"
+
+      
+      ### "measurement" parameters:
+      # (none so far)
+      
+      ### Pose selection strategy:
+      selection_strategy: optimal
+      # number of poses which should be selected from the pose pool
+      num_of_poses: 50
+      num_of_splits: 3
+    </rosparam>
+    <rosparam ns="poses">
+      standing:
+        joint_names: ['HeadYaw', 'HeadPitch', 'LShoulderPitch', 'LShoulderRoll', 'LElbowYaw', 'LElbowRoll', 'LWristYaw', 'LHand', 'LHipYawPitch', 'LHipRoll', 'LHipPitch', 'LKneePitch', 'LAnklePitch', 'LAnkleRoll', 'RHipYawPitch', 'RHipRoll', 'RHipPitch', 'RKneePitch', 'RAnklePitch', 'RAnkleRoll', 'RShoulderPitch', 'RShoulderRoll', 'RElbowYaw', 'RElbowRoll', 'RWristYaw', 'RHand']
+        positions: [0.0,0.0, 1.39, 0.34, -1.39, -1.04, 0.0, 0.0, 0.0, 0.0, -0.43, 0.69, -0.34, 0.0, 0.0, 0.0, -0.43, 0.69, -0.34, 0.0, 1.39, -0.34, 1.39, 1.04, 0.0, 0.0]
+    </rosparam>
+    <param name="pose_file" value="poses_$(arg chain_name)_generated.yaml"/>
+  </node>  
+</launch>

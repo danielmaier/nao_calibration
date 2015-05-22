@@ -1,0 +1,36 @@
+<launch>
+   <env name="PYTHONPATH" value="$(env PYTHONPATH)" /> 
+   <arg name="robot_name" default="ra" />
+   <arg name="nao_ip" default="$(optenv NAO_IP 127.0.0.1)" />
+   <arg name="nao_port" default="$(optenv NAO_PORT 9559)" />
+
+   <!--
+   <include file="$(find kinematic_calibration)/launch/data_capturing.launch" >
+      <arg name="chain_name" value="larm" />
+      <arg name="robot_ip" value="$(arg nao_ip)" />
+      <arg name="manual" value="false" />
+   </include>
+-->
+
+   <node name="onlineCalibration" pkg="kinematic_calibration" type="onlineCalibration" output="screen" required="True">
+      <rosparam file="$(find kinematic_calibration)/config/nao_calibration.yaml" />
+      <rosparam ns="rarm" file="$(find kinematic_calibration)/config/params_rarm_general.yaml" />
+      <rosparam ns="larm" file="$(find kinematic_calibration)/config/params_larm_general.yaml" />
+      <rosparam ns="rarm" file="$(find kinematic_calibration)/config/params_rarm_capturing.yaml" />
+      <rosparam ns="larm" file="$(find kinematic_calibration)/config/params_larm_capturing.yaml" />
+      <param name="find_marker" type="bool" value="True" />
+      <param name="move_marker_to_corners" type="bool" value="False" />
+      <remap from="camera_info" to="/camera/camera_info" />
+      <remap from="nao_camera" to="camera" />
+
+   </node>
+
+   <!--
+   <node name="dataCaptureService" pkg="kinematic_calibration" type="dataCaptureService" output="screen" >
+      <param name="find_marker" type="bool" value="True" />
+      <param name="move_marker_to_corners" type="bool" value="False" />
+   </node>
+-->
+
+
+</launch>

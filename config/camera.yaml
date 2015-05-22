@@ -1,0 +1,20 @@
+image_width: 640
+image_height: 480
+camera_name: nao_camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [545.901010911614, 0.0, 324.928141457363, 0.0, 551.038376498394, 201.579989064776, 0.0, 0.0, 1.0]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [0.025529789657517, 2.61142321092426, -0.0636735578190471, -0.0350418786643482, 0.213964056836612]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [545.901010911614, 0.0, 324.928141457363, 0.0, 0.0, 551.038376498394, 201.579989064776, 0.0, 0.0, 0.0, 1.0, 0.0]

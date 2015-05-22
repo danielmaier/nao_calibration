@@ -1,0 +1,32 @@
+<launch>
+   <env name="PYTHONPATH" value="$(env PYTHONPATH)" /> 
+  <arg name="nao_ip" default="$(optenv NAO_IP 127.0.0.1)" />
+  <arg name="nao_port" default="$(optenv NAO_PORT 9559)" />
+
+  <!-- joint states publisher -->
+  <node pkg="naoqi_driver" type="naoqi_joint_states.py" name="naoqi_joint_states" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" />
+
+  <!-- camera driver -->
+  <include file="$(find naoqi_sensors)/launch/camera.launch" >
+     <arg name="nao_ip" value="$(arg nao_ip)" />
+  </include>
+
+  <!-- nao controller -->
+  <node pkg="nao_driver" type="nao_controller.py" name="pose_controller" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" output="screen" />
+
+  <!-- robot state publisher -->
+  <include file="$(find nao_description)/launch/nao_v4_publisher.launch" >
+  </include>
+
+   <!-- Nao pose manager -->
+   <node pkg="nao_pose" type="pose_manager.py" name="pose_manager" >
+     <rosparam file="$(find nao_pose)/config/basic_poses.yaml" command="load" ns="poses" />
+     <rosparam file="$(find kinematic_calibration)/config/poses_larm_750.yaml" command="load" ns="poses" />
+     <rosparam file="$(find kinematic_calibration)/config/poses_rarm_750.yaml" command="load" ns="poses" />
+  </node>
+
+
+
+
+
+</launch>

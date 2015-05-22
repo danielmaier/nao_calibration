@@ -1,0 +1,250 @@
+lleg001:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.324889, 0.916465, -0.662726, -0.00233626, -1.3025, 0.186268, 0.599762, 0.0701767]
+
+lleg002:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.181071, 1.00842, -0.391476, 0.329733, -1.17818, 0.483122, 0.0318231, -0.21973]
+
+lleg003:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.168133, 1.0294, -0.741622, 0.506707, -0.720227, 0.382824, -0.0714539, -0.140508]
+
+lleg004:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.109875, 0.706779, -0.0438449, 0.0942288, -1.14381, 0.195114, 0.3748, 0.0459367]
+
+lleg005:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.205374, -0.163452, 0.241831, 0.319261, -1.23285, 0.0909868, 0.0303856, -0.112059]
+
+lleg006:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.11385, 0.693946, -0.41518, 0.454188, -0.919425, 0.158553, 0.375257, -0.109358]
+
+lleg007:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.0547602, 1.06289, -0.731346, 0.313167, -1.34124, 0.522526, 0.145618, -0.0777427]
+
+lleg008:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0431112, 0.596419, -0.675726, 0.460975, -0.938911, 0.490701, 0.0127306, 0.0202002]
+
+lleg009:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.0500954, 0.94307, -0.408041, 0.18492, -0.842419, -0.0079955, 0.133347, -0.151191]
+
+lleg010:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0327926, 0.642519, -0.490127, 0.0281011, -1.06191, 0.47361, 0.196432, 0.032707]
+
+lleg011:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.1888, 1.32745, -0.7449, 0.386219, -0.224841, 0.159683, -0.136784, -0.0459892]
+
+lleg012:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.0552668, 0.377572, -0.541133, -0.200582, -0.794389, 0.378854, 0.263694, 0.220838]
+
+lleg013:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0859387, 0.573806, -0.510718, 0.368673, -1.38346, 0.260208, 0.377274, -0.19049]
+
+lleg014:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.240245, 0.824196, -0.0786856, -0.0254012, -1.10703, 0.427351, 0.193393, 0.0396572]
+
+lleg015:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.0982944, 0.533438, 0.13835, 0.523957, -1.08958, 0.196637, 0.118528, -0.405823]
+
+lleg016:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.197946, 0.293808, -0.184775, 0.459047, -1.40165, 0.158994, 0.198475, -0.18475]
+
+lleg017:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.213672, 0.65397, -0.898683, -0.0483652, 0.111066, 0.0438516, 0.0251139, 0.0980461]
+
+lleg018:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.103007, 0.523859, -0.805965, 0.514465, -1.10842, 0.209992, 0.276583, -0.0638025]
+
+lleg019:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.166807, -0.104317, -0.0268032, 0.450888, -1.36241, 0.570732, 0.10528, -0.201393]
+
+lleg020:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.256457, 1.01017, -0.911215, 0.481521, -1.24312, -0.0509669, 0.524912, -0.0982382]
+
+lleg021:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0106828, 0.586478, -0.0592408, 0.384249, -1.17849, 0.319533, -0.00218521, -0.153775]
+
+lleg022:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0927329, 0.817413, -0.350364, 0.306047, -1.30726, 0.202956, 0.269977, -0.0250489]
+
+lleg023:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.206747, 0.679863, -0.526414, 0.0924194, -1.10648, 0.395342, 0.213994, -0.0863019]
+
+lleg024:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.178805, 1.49932, -1.02, 0.490249, -0.0372195, 0.0660811, 0.00189249, -0.0603362]
+
+lleg025:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.258299, 1.11693, -0.625792, 0.408508, -0.406571, 0.130096, -0.0879974, -0.134901]
+
+lleg026:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.00771536, 0.532168, -0.446376, 0.544356, -1.53689, 0.912607, -0.00366477, -0.219569]
+
+lleg027:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0536955, 1.19392, -1.03629, 0.00576627, -1.00246, 0.632747, 0.13898, 0.09459]
+
+lleg028:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.209977, 0.780809, -0.0111214, 0.343721, -0.805477, 0.283256, -0.0571703, -0.354238]
+
+lleg029:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0743622, 0.427938, -0.836658, 0.216774, -0.85425, 0.288169, 0.0275318, 0.0350012]
+
+lleg030:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0182445, 0.544836, -0.660349, 0.583761, -1.21109, 0.691295, -0.0616436, -0.204479]
+
+lleg031:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.0846306, 1.02216, -0.419825, 0.54568, -1.09238, 0.224558, -0.0410393, -0.331965]
+
+lleg032:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.274174, 0.241428, 0.0830612, -0.0205799, -0.835569, 0.217844, -0.102947, 0.0424168]
+
+lleg033:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.198458, 0.0932352, -0.296328, -0.109401, -1.03974, 0.284196, 0.0672479, 0.17102]
+
+lleg034:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.301969, 1.0117, -0.542259, 0.0337424, -0.74259, 0.13337, 0.00655062, -0.0326536]
+
+lleg035:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.307688, -0.0561231, -0.554212, -0.106699, -0.912559, 0.566634, -0.000956978, 0.168619]
+
+lleg036:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.178079, 0.27604, 0.103456, 0.607363, -1.02406, 0.117108, 0.281008, -0.33336]
+
+lleg037:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.230187, 0.471021, -0.670719, 0.268386, -1.21497, -0.0443571, 0.452566, -0.0584859]
+
+lleg038:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.165229, 0.993061, -0.495638, 0.379394, -0.60915, 0.3851, -0.091455, -0.210753]
+
+lleg039:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.199077, 0.40177, 0.0635536, 0.550754, -1.11582, -0.0131254, 0.0373751, -0.339635]
+
+lleg040:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [-0.131375, 1.14749, -0.910361, 0.243913, -1.24755, 0.60875, 0.0117687, 0.0999892]
+
+lleg041:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.253863, 0.0176793, -0.374593, -0.0527123, -0.883799, 0.497907, 0.0954077, 0.171333]
+
+lleg042:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.235562, 0.56581, 0.0366178, 0.199434, -1.19719, 0.419983, -0.0178133, -0.109396]
+
+lleg043:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.151515, 0.928534, -0.436845, 0.557926, -0.161814, -0.051572, 0.0692614, -0.375847]
+
+lleg044:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.131931, -0.0687702, -0.0346695, 0.368585, -1.25339, 0.557725, -0.157471, -0.0351746]
+
+lleg045:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.206294, 1.00762, -0.680306, 0.506602, -0.814178, 0.0507767, 0.181236, -0.22551]
+
+lleg046:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.193266, 0.736808, -0.293101, 0.388392, -0.644964, 0.270044, 0.0128842, -0.114607]
+
+lleg047:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.259582, 0.519297, -0.0174022, 0.185115, -0.880678, 0.0382111, 0.164088, -0.227595]
+
+lleg048:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.0158764, 0.797509, -0.505335, -0.036196, -1.2141, 0.156215, 0.15538, 0.183273]
+
+lleg049:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.207839, 0.465079, -0.609901, 0.0463426, -1.03122, 0.746043, -0.301736, 0.046438]
+
+lleg050:
+  joint_names: ["HeadPitch", "HeadYaw", "LHipYawPitch", "LHipRoll", "LHipPitch", "LKneePitch", "LAnklePitch", "LAnkleRoll"]
+  time_from_start: 1.0
+  positions: [0.00691932, 1.05269, -0.467762, 0.349531, -0.815372, 0.141392, 0.0650944, -0.147686]
+

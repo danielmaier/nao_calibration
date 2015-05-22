@@ -1,0 +1,36 @@
+# Choose which parts should be calibrated:
+# - true: initial parameters are loaded, optimized and updated
+# - false: initial parameters are used and written back, but not modified 
+calibrate_joint_offsets: true
+calibrate_camera_transform: false
+calibrate_camera_intrinsics: true
+calibrate_marker_transform: true
+
+# Note 1: setting the following to 'true' automatically 
+# sets 'calibrate_joint_offsets' to false as both together make no sense!
+# Note 2: 'writing back' the optimized 6D transformations is unsupported
+calibrate_joint_6D: false      
+
+# Filename suffixes for the calibration files:
+# The final filename will be: robot_name + "_" + suffix
+# where robot_name will be taken from the currently loaded urdf robot model
+# and suffix is the value of the following parameters.
+joint_offsets_filename_suffix: calibration_joint_offsets.xacro
+camera_transform_filename_suffix: calibration_camera_transform.xacro
+urdf_filename_suffix: robot_model_calibrated.xml
+marker_transforms_filename_suffix: calibration_marker_transformations.xacro
+camera_intrnsics_filename: nao_bottom_640x480.yaml
+
+### Optimization parameters:
+# Number of iterations for the optimization algorithm:
+max_iterations: 50
+# do early stopping?
+do_early_stopping: false
+gain_threshold: 0.01 
+# use a robust kernel?
+use_robust_kernel: false
+# debug flag:
+debug_optimization: true
+# use single point optimization or pose? (only if available for the marker type)
+# "single_point" (default) or "full_pose"
+marker_optimization_type: single_point

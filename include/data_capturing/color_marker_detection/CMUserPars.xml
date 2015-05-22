@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<root>
+    
+<!-- 
+ CascadeLength is the number of tests in the cascade and must be <= 18
+ Fewer tests result in higher detection rate but more false positives
+ -->
+<CascadeLength>
+15
+</CascadeLength>
+
+<!--
+ProbeHalfSpacing is the half width (in pixels) of the "probe" that is used to search for color patterns. Larger values of ProbeHalfSpacing make the system more robust to motion blur but reduce the max distance at which a marker can be detected.
+--> 
+    
+<ProbeHalfSpacing>
+8
+</ProbeHalfSpacing>
+ 
+<Permutations>
+<!-- 
+NumberOfPermutations is the number of different permutations that are searched and must be less than or equal to the number of PermutationIndex fields listed below. The classifier will search for the first NumberOfPermutations in the list of PermutationIndex
+ -->
+<NumberOfPermutations>24</NumberOfPermutations>
+    
+<PermutationIndex>0</PermutationIndex>
+<PermutationIndex>1</PermutationIndex>
+<PermutationIndex>2</PermutationIndex>
+<PermutationIndex>3</PermutationIndex>
+<PermutationIndex>4</PermutationIndex>
+<PermutationIndex>5</PermutationIndex>
+<PermutationIndex>6</PermutationIndex>
+<PermutationIndex>7</PermutationIndex>
+<PermutationIndex>8</PermutationIndex>
+<PermutationIndex>9</PermutationIndex>
+<PermutationIndex>10</PermutationIndex>
+<PermutationIndex>11</PermutationIndex>
+<PermutationIndex>12</PermutationIndex>
+<PermutationIndex>13</PermutationIndex>
+<PermutationIndex>14</PermutationIndex>
+<PermutationIndex>15</PermutationIndex>
+<PermutationIndex>16</PermutationIndex>
+<PermutationIndex>17</PermutationIndex>
+<PermutationIndex>18</PermutationIndex>
+<PermutationIndex>19</PermutationIndex>
+<PermutationIndex>20</PermutationIndex>
+<PermutationIndex>21</PermutationIndex>
+<PermutationIndex>22</PermutationIndex>
+<PermutationIndex>23</PermutationIndex>
+    
+</Permutations>
+
+
+
+</root>
+

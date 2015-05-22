@@ -1,0 +1,5 @@
+<launch>
+  <rosparam file="$(find kinematic_calibration)/config/params_general.yaml" command="load"/>
+  <node pkg="kinematic_calibration" type="optimizationNode" name="optimizationNode" output="screen" />
+  <node pkg="kinematic_calibration" type="updateNode" name="updateNode" />
+</launch>

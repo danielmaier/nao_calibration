@@ -1,0 +1,51 @@
+pose_files: ['/tmp/poses_larm_750.yaml',
+'/tmp/poses_rarm_750.yaml'] # list of pose files 
+init_camera_from_file: true # init camera from a file or camera info msg?
+camera_file_location: /tmp/camera.yaml #initial camera calibration parameters
+camera_tf_frame: "CameraBottom_frame" # tf frame name of the camera
+chains: ['larm', 'rarm'] # kinematic chains to consider in calibration
+chain_names: ['larm', 'rarm'] # same as above, TODO: unify
+
+# pose selection specific paramters
+selection_strategy: DETMAXINC # possible options: DETMAX, DETMAXDEC, DETMAXINC
+criterion: DET # DET, NAI, etc.
+scale_jacobian: True # see paper
+maximum_number_of_poses: 25 # how many poses/configurations should be used for calibration?
+minimum_number_of_poses: 14 # minimum: 21 for whole body, 13 for both arms  # start with how many poses?
+detmax_iterations: 2 # internal iterations (for the detmax algorithm)
+
+
+# degrees of freemdom for the individual chains, TODO: Automate this using kdl
+dofs:
+    larm: 4
+    rarm: 4
+    lleg: 5
+    rleg: 4 # change to 5 if lleg is not to be included in calibration, also remove RHipYawPitch from ignore_joints
+
+#ignore these joints in optimization (because of redundancy)
+ignore_joints: [HeadPitch, LWristYaw, RWristYaw, RHipYawPitch, RAnkleRoll, LAnkleRoll]
+
+
+# optimization options
+calibrate_joint_6D: False
+calibrate_joint_offsets: True 
+calibrate_camera_transform: True 
+calibrate_camera_intrinsics: True 
+calibrate_marker_transform: True 
+use_robust_kernel: True
+max_iterations: 50
+randomize_measurements_per_chain: 0
+marker_optimization_type: single_point 
+add_noise_to_measurements: 0
+
+
+# parameters for the resulting calibration files
+# Filename suffixes for the calibration files:
+# The final filename will be: robot_name + "_" + suffix
+# where robot_name will be taken from the currently loaded urdf robot model
+# and suffix is the value of the following parameters.
+joint_offsets_filename_suffix: calibration_joint_offsets.xacro
+camera_transform_filename_suffix: calibration_camera_transform.xacro
+urdf_filename_suffix: robot_model_calibrated.xml
+marker_transforms_filename_suffix: calibration_marker_transformations.xacro
+camera_intrnsics_filename: nao_bottom_640x480.yaml
