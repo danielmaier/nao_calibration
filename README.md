@@ -28,7 +28,6 @@ The software requires the following software:
 * nao_robot
 * opencv
 * aruco (e.g. from ar_sys in ros-indigo)
-
 * catkin
 * doxygen
 
@@ -55,31 +54,30 @@ Third, there are some implicit assumptions made, e.g. that you are trying to cal
 
 ### Configuration:
 The main config file is nao_calibration.yaml.
-For each kinematic chain, there is an additional config file params_$CHAINNAME_general.yaml  that allows to change the name of the frames (e.g. Marker frame, Head frame, etc.), marker type (checkerboard, aruco), and some marker specific settings (dimensions)
-Finally, there is params_$CHAINNAME_capturing.yaml that contains capturing parameters (e.g. head step when searching for a marker) 
+For each kinematic chain, there is an additional config file params_$CHAINNAME_general.yaml  that allows to change the name of the frames (e.g. Marker frame, Head frame, etc.), marker type (checkerboard, aruco), and some marker specific settings (dimensions). Finally, there is params_$CHAINNAME_capturing.yaml that contains capturing parameters (e.g. head step when searching for a marker) 
 
 
 
 ### Prerequisites:
 For convenience, the following launch file should bring up all the prerequisites that are needed for the calibration:
-roslaunch kinematic_calibration nao_basic.launch
+`roslaunch kinematic_calibration nao_basic.launch`
 
 In details, the calibration software needs the robot description published to the parameter server (nao_description)
 
 Furtermore, it requires (at least) the following services:
-joint_stiffness_trajectory (nao_controller)
-joint_trajectory  (nao_controller)
-body_pose (nao_pose)
++ joint_stiffness_trajectory (nao_controller)
++ joint_trajectory  (nao_controller)
++ body_pose (nao_pose)
 
 Also, these topics need to be published:
-camera/image_raw (nao_sensors)
-joint_states (nao_driver)
++ camera/image_raw (nao_sensors)
++ joint_states (nao_driver)
 
 
 ### Running the actual calibration:
-rosrun kinematic_calibration upateNode
-roslaunch kinematic_calibration dataCaptureService.launch
-roslaunch kinematic_calibration calibrate_nao.launch
+`rosrun kinematic_calibration upateNode`
+`roslaunch kinematic_calibration dataCaptureService.launch`
+`roslaunch kinematic_calibration calibrate_nao.launch`
 
 calibrate_nao calibrates both arms of the robot. Start with that. To include the legs, adjust the launch file accordingly, as well as the config file (nao_calibration.yaml)
 
